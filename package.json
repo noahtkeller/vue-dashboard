@@ -1,0 +1,88 @@
+{
+  "name": "@noahtkeller/vue-dashboard",
+  "version": "0.1.0",
+  "description": "The single-page application powering the dynamic portion of my website",
+  "author": {
+    "name": "Noah Keller",
+    "email": "noahtkeller@gmail.com",
+    "url": "https://noahtkeller.dev/"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve src/dev.js",
+    "build": "vue-cli-service build --target lib --name dashboard src/main.js",
+    "lint": "vue-cli-service lint"
+  },
+  "main": "./dist/dashboard.common.js",
+  "dependencies": {
+    "@goauthentik/api": "^2022.3.3-1649234516",
+    "@material/theme": "^13.0.0",
+    "@mdi/font": "5.9.55",
+    "@noahtkeller/md-theme": "github:noahtkeller/sass-md-theme",
+    "@noahtkeller/vue-yify-client": "github:noahtkeller/vue-yify-client",
+    "core-js": "^3.8.3",
+    "mitt": "^3.0.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "node-sass-json-importer": "^4.3.0",
+    "oidc-client": "^1.11.5",
+    "roboto-fontface": "*",
+    "vue": "^3.2.13",
+    "vue-class-component": "^8.0.0-0",
+    "vue-oidc-client": "^1.0.0-alpha.4",
+    "vue-oidc-plugin": "github:noahtkeller/vue-oidc-plugin",
+    "vue-router": "^4.0.3",
+    "vuetify": "^3.0.0-beta.0",
+    "vuex": "^4.0.0",
+    "vuex-persist": "^3.1.3",
+    "webfontloader": "^1.0.0",
+    "webtorrent": "^1.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "less-loader": "^10.2.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^10.2.1",
+    "typescript": "^4.7.0-dev.20220406",
+    "vue-cli-plugin-vuetify": "~2.4.8",
+    "vuetify-loader": "^2.0.0-alpha.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript"
+    ],
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "bugs": "https://github.com/noahtkeller/vue-dashboard/issues",
+  "homepage": "https://github.com/noahtkeller/vue-dashboard",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahtkeller/vue-dashboard.git"
+  }
+}
